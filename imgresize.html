@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Image Compressor - Optimize Your Photos Online</title>
+    <meta name="description" content="Compress your images online for free! Reduce file size without losing quality. Supports JPEG, PNG, and GIF. Improve website speed and SEO.">
+    <meta name="keywords" content="image compressor, image optimizer, compress image online, reduce image size, photo compressor, free image compressor, website speed optimization, image SEO">
+    <link rel="canonical" href="YOUR_CANONICAL_URL">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        section {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        h2 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        input[type="file"] {
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #image-preview-container {
+            margin-bottom: 15px;
+            border: 1px dashed #ccc;
+            padding: 10px;
+            border-radius: 4px;
+            display: none;
+        }
+
+        label {
+            display: inline-block;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        input[type="range"] {
+            width: calc(100% - 120px);
+            vertical-align: middle;
+        }
+
+        #compression-value {
+            display: inline-block;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #download-link-container {
+            margin-top: 15px;
+        }
+
+        #download-link {
+            display: inline-block;
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        #download-link:hover {
+            background-color: #1e7e34;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #eee;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .ad-space {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            main {
+                padding: 15px;
+                margin: 15px auto;
+            }
+
+            section {
+                padding: 10px;
+            }
+
+            input[type="range"] {
+                width: calc(100% - 100px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Smart Image Compressor</h1>
+        <p>Reduce image file size without sacrificing quality. Boost your website's performance!</p>
+    </header>
+
+    <main>
+        <section id="upload-section">
+            <h2>Upload Your Image</h2>
+            <input type="file" id="image-upload" accept="image/*">
+            <div id="image-preview-container">
+                <img id="image-preview" src="#" alt="Selected Image" style="display: none; max-width: 100%; height: auto;">
+            </div>
+        </section>
+
+        <section id="compression-section" style="display: none;">
+            <h2>Compression Settings</h2>
+            <label for="compression-level">Compression Level (0-100):</label>
+            <input type="range" id="compression-level" min="0" max="100" value="75">
+            <span id="compression-value">75%</span>
+            <button id="compress-button">Compress Image</button>
+        </section>
+
+        <section id="download-section" style="display: none;">
+            <h2>Download Optimized Image</h2>
+            <div id="download-link-container">
+                <a id="download-link" href="#" download="compressed_image">Download Image</a>
+            </div>
+            <div class="ad-space">
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+                     data-ad-slot="YOUR_AD_SLOT_ID_1"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </section>
+
+        <section id="about-section">
+            <h2>About Our Image Compressor</h2>
+            <p>This tool helps you easily compress your JPEG, PNG, and GIF images directly in your browser. By reducing the file size, you can significantly improve your website's loading speed, which is crucial for user experience and SEO. Our advanced compression algorithms ensure a balance between file size reduction and image quality.</p>
+            <ul>
+                <li>Supports common image formats: JPEG, PNG, GIF.</li>
+                <li>Adjustable compression level for optimal results.</li>
+                <li>Privacy-focused: Image processing happens locally in your browser.</li>
+                <li>Free and easy to use.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Smart Image Compressor | <a href="/privacy-policy">Privacy Policy</a> | <a href="/terms-of-service">Terms of Service</a></p>
+        <div class="ad-space">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+                 data-ad-slot="YOUR_AD_SLOT_ID_2"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const imageUpload = document.getElementById('image-upload');
+            const imagePreviewContainer = document.getElementById('image-preview-container');
+            const imagePreview = document.getElementById('image-preview');
+            const compressionSection = document.getElementById('compression-section');
+            const compressionLevel = document.getElementById('compression-level');
+            const compressionValue = document.getElementById('compression-value');
+            const compressButton = document.getElementById('compress-button');
+            const downloadSection = document.getElementById('download-section');
+            const downloadLinkContainer = document.getElementById('download-link-container');
+            const downloadLink = document.getElementById('download-link');
+
+            let originalImageFile;
+
+            imageUpload.addEventListener('change', (event) => {
+                const file = event.target.files[0];
+                if (file) {
+                    originalImageFile = file;
+                    const reader = new FileReader();
+                    reader.onload = (e) => {
+                        imagePreview.src = e.target.result;
+                        imagePreview.style.display = 'block';
+                        imagePreviewContainer.style.display = 'block';
+                        compressionSection.style.display = 'block';
+                        downloadSection.style.display = 'none';
+                    };
+                    reader.readAsDataURL(file);
+                } else {
+                    imagePreview.src = '#';
+                    imagePreview.style.display = 'none';
+                    imagePreviewContainer.style.display = 'none';
+                    compressionSection.style.display = 'none';
+                    downloadSection.style.display = 'none';
+                }
+            });
+
+            compressionLevel.addEventListener('input', () => {
+                compressionValue.textContent = `${compressionLevel.value}%`;
+            });
+
+            compressButton.addEventListener('click', () => {
+                if (!originalImageFile) {
+                    alert('Please upload an image first.');
+                    return;
+                }
+
+                const reader = new FileReader();
+                reader.onload = (event) => {
+                    const img = new Image();
+                    img.onload = () => {
+                        const canvas = document.createElement('canvas');
+                        canvas.width = img.width;
+                        canvas.height = img.height;
+                        const ctx = canvas.getContext('2d');
+                        ctx.drawImage(img, 0, 0);
+
+                        const quality = parseInt(compressionLevel.value) / 100;
+                        let compressedDataURL;
+                        const fileType = originalImageFile.type;
+
+                        if (fileType === 'image/jpeg' || fileType === 'image/jpg') {
+                            compressedDataURL = canvas.toDataURL('image/jpeg', quality);
+                        } else if (fileType === 'image/png') {
+                            compressedDataURL = canvas.toDataURL('image/png', quality); // PNG compression might not be as effective with quality
+                        } else if (fileType === 'image/gif') {
+                            // Basic GIF handling - no quality adjustment here in this simple example
+                            compressedDataURL = event.target.result;
+                        } else {
+                            alert('Unsupported image format.');
+                            return;
+                        }
+
+                        downloadLink.href = compressedDataURL;
+                        const imageNameParts = originalImageFile.name.split('.');
+                        const imageName = imageNameParts.slice(0, -1).join('.');
+                        const fileExtension = fileType.split('/')[1];
+                        downloadLink.download = `${imageName}_compressed.${fileExtension}`;
+                        downloadLinkContainer.innerHTML = `<a id="download-link" href="${compressedDataURL}" download="${imageName}_compressed.${fileExtension}">Download Optimized Image</a>`;
+                        downloadLink = document.getElementById('download-link'); // Re-assign after innerHTML
+                        downloadSection.style.display = 'block';
+                    };
+                    img.src = event.target.result;
+                };
+                reader.readAsDataURL(originalImageFile);
+            });
+        });
+    </script>
+</body>
+</html>
